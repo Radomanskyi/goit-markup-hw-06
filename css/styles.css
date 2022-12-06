@@ -134,6 +134,91 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
 }
 
+.form {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    resize: none;
+}
+
+.button-send {
+    position: absolute;
+    bottom: 40px;
+    left: 164px;
+    right: 164px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    background-color: var(--accent);
+    padding: 10px 52px;
+    border: var(--accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.text-form {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.name-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--secondary-color);
+}
+
+.checkbox-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+.comment {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    height: 120px;
+}
+
+.text-accept {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.last-form-field {
+    margin-bottom: 20px;
+}
+
 .site-nav {
     display: flex;
     align-items: center;
