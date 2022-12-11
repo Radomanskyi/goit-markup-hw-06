@@ -85,9 +85,15 @@ a {
 }
 
 .close-svg {
+    display: flex;
     width: 18px;
     height: 18px;
     background-color: var(--white);
+}
+
+.close-button:hover, .close-button:focus {
+    border-color: var(--accent);
+    fill: var(--accent);
 }
 
 .close-button {
@@ -103,6 +109,8 @@ a {
     border-radius: 50%;
     background: transparent;
     cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -125,19 +133,17 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal {
     position: absolute;
     width: 528px;
-    height: 581px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
 }
 
 .form {
-    width: 448px;
-    margin-left: auto;
-    margin-right: auto;
+   width: 100%;
 }
 
 textarea {
@@ -146,15 +152,14 @@ textarea {
 }
 
 .button-send {
-    position: absolute;
-    bottom: 40px;
-    left: 164px;
-    right: 164px;
-    display: flex;
+    display: block;
+    margin: 30px auto 0;
     align-items: center;
-    text-align: center;
     width: 200px;
     height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
     letter-spacing: 0.06em;
     color: var(--white);
     background-color: var(--accent);
@@ -163,19 +168,20 @@ textarea {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button-send:hover, .button-send:focus {
+    background-color: #188CE8;
+    }
+
 .text-form {
-    width: 448px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .name-text {
@@ -185,10 +191,11 @@ textarea {
     letter-spacing: 0.01em;
     color: var(--secondary-color);
     margin-top: 12px;
+    margin-bottom: 4px;
 }
 
 .field-input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     border-color: #21212133;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -213,6 +220,7 @@ textarea {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding: 12px 16px;
 }
 
 
@@ -226,13 +234,11 @@ textarea {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-modal {
     fill: var(--main-color);
-}
-
-.icon-span {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -256,18 +262,10 @@ textarea {
 
 .field-input:hover {
     border-color: var(--accent);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment:hover {
     border-color:var(--accent);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-svg:hover, .close-svg:focus {
-    fill: var(--accent);
-    border-color: var(--accent);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
