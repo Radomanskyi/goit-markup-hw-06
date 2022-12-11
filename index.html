@@ -84,13 +84,15 @@
                     <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
                 </div>
                     <div class="agree">
-                        <input type="checkbox" name="policy" id="policy" class="checkbox"/>
-                        <span class="checkbox-icon">
-                            <svg class="custom-icon" width="16" height="15">
-                                <use href="./images/symbol-defs.svg#icon-check"></use>
-                            </svg>
-                        </span>
-                        <label for="policy" class="checkbox-text">Погоджуюся з розсилкою та приймаю<span><a href="" class="text-accept">Умови договору</a></span></label>
+                        <label class="checkbox-text">
+                            <input type="checkbox" name="policy" class="checkbox"/>
+                            <span class="checkbox-icon">
+                                <svg width="16" height="15">
+                                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                                </svg>
+                            </span>
+                            Погоджуюся з розсилкою та приймаю<a href="" class="text-accept">Умови договору</a>
+                        </label>
                     </div>
                 <button type="submit" class="button-send">Відправити</button>
             </form>
@@ -414,7 +416,7 @@
                 </li>
             </ul>
         </div>
-        <div class="form-field">
+        <div class="footer-field">
             <p class="text-subscribe">Підпишіться на розсилку</p>
 
             <div class="group-footer">
@@ -422,12 +424,10 @@
                 <label for="mail"></label>
 
             <button class="footer-button" type="submit">
-                <div class="content-button">
-                    <a class="text-button">Підписатися</a>
-                <svg class="" width="24" height="24">
+                    Підписатися
+                <svg class="telegram-icon" width="24" height="24">
                     <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
-                </div>
             </button>
             </div>
         </div>
