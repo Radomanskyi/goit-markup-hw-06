@@ -216,11 +216,13 @@ textarea {
 }
 
 .checkbox-text {
+    display: inline-block;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+    outline: 1px solid tomato;
 }
 
 .comment {
@@ -272,12 +274,11 @@ textarea {
     width: 16px;
     height: 15px;
     margin-right: 7px;
-    appearance: none;
-    position: absolute;
+    appearance: ;
 }
 
 .checkbox:checked + .checkbox-icon {
-    background-color: red;
+    background-color: var(--accent);
 }
 
 .last-form-field {
